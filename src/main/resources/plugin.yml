@@ -1,0 +1,4 @@
+name: RandomRedirect
+main: manaki.randomredirect.RandomRedirect
+version: 1.0
+author: Manaki

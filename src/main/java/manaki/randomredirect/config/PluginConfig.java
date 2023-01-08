@@ -1,4 +1,4 @@
-package manaki.randomredirect;
+package manaki.randomredirect.config;
 
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
@@ -21,6 +21,7 @@ public class PluginConfig {
     private List<String> redirectableServers;
 
     public PluginConfig(Plugin plugin) {
+        this.plugin = plugin;
         try {
             this.makeConfig();
             this.config = YamlConfiguration.getProvider(YamlConfiguration.class).load(new File(plugin.getDataFolder(), "config.yml"));
